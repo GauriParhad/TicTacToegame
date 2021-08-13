@@ -15,7 +15,12 @@ public class TicTacToeGame {
     public static void main(String[] args) {
         System.out.println("Welcome to TicTacToeGame");
         createboard();
+        if (isSpacefree( char[] board, int index))
+        System.out.println("Select the index from 1 to 9");
+     else
+        System.out.println("Space is full");
     }
+
 
     //Creating method for playercomputer
     //Giving the inputs X or O
@@ -39,6 +44,8 @@ public class TicTacToeGame {
                 break;
         }
     }
+
+
     public static int showboard(()
     {
         System.out.println("|---|---|---|");
@@ -48,6 +55,13 @@ public class TicTacToeGame {
         System.out.println("|------------");
         System.out.println("|"+board[7]+"|"+board[8]"|"+board[9]+"|");
         System.out.println("|---|---|---|");
+        
+    }
+
+
+    public static boolean isSpacefree(char[]board,int index)
+    {
+        return board[index]=' ';
 
     }
 
