@@ -67,5 +67,12 @@ public class TicTacToeGame {
         return board[index]==' ';
 
     }
-
+    public static void chooseusercomputer() {
+        int Head = 1;
+        int emp_check = (int) Match.floor(Math.random() * 10) % 2;
+        if (Head == emp_check)
+            System.out.println("USER PLAY");
+        else
+            System.out.println("COMPUTER PLAY");
+    }
 }
