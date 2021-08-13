@@ -6,7 +6,7 @@ public class TicTacToeGame {
     public static char[] createboard() {
         char[] board = new char[10];
         for (int i = 1; i < board.length; i++) {     //Ignoring 0th index
-            board[i] = ' ';
+            board[i] = scan.next().charAt(0);
         }
         return board;
     }
@@ -67,12 +67,15 @@ public class TicTacToeGame {
         return board[index]==' ';
 
     }
-    public static void chooseusercomputer() {
-        int Head = 1;
+    public static void resultdetermination() {
+        int istie = 1;
+        int iswinner=2;
         int emp_check = (int) Match.floor(Math.random() * 10) % 2;
-        if (Head == emp_check)
-            System.out.println("USER PLAY");
+        if (iswinner == emp_check)
+            System.out.println("WIN");
+        if (istie== emp_check)
+            System.out.println("TIE");
         else
-            System.out.println("COMPUTER PLAY");
+            System.out.println("Please change the turn.");
     }
 }
