@@ -129,4 +129,12 @@ public class TicTacToeGame{
         } else
             System.out.println("Board is full");
     }
+    public static void checkgame(char board[]) {
+        if (board.length == 0) {
+            System.out.println("Player should continue the game");
+            else
+            System.out.println("Game over");
+        }
+    }
+
 }
