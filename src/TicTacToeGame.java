@@ -118,4 +118,15 @@ public class TicTacToeGame{
             System.out.println("right top corner" + board[9]);
         }
     }
+    public static void checkcenterposition(char board[]) {
+        if (board.length == 0) {
+            if (board[5] == 0)
+                System.out.println("Center index is free");
+            else {
+                System.out.println("Print the other available free indexes");
+                System.out.println(board[2] + "," + board[4] + "," + board[6] + "," + board[8] +);
+            }
+        } else
+            System.out.println("Board is full");
+    }
 }
