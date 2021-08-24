@@ -1,6 +1,6 @@
-public class TicTacToeGame {
-    import java.util.Scanner;
+import java.util.Scanner;
 
+public class TicTacToeGame{
 
     //creating empty board
     public static char[] createboard() {
@@ -67,6 +67,17 @@ public class TicTacToeGame {
         return board[index]==' ';
 
     }
+
+
+    public static void chooseusercomputer() {
+        int ischeck = 1;
+        int emp_check = (int) Match.floor(Math.random() * 10) % 2;
+        if (ischeck == emp_check)
+            System.out.println("User will play the game");
+        else
+            System.out.println("Computer will play the game");
+    }
+
     public static void resultdetermination() {
         int istie = 1;
         int iswinner=2;
@@ -77,5 +88,15 @@ public class TicTacToeGame {
             System.out.println("TIE");
         else
             System.out.println("Please change the turn.");
+    }
+
+    public static void computerDetermination(){
+        int iscomputer=1;
+        int empcheck=(int)Math.floor(Math.random()*10) %2;
+        if (iscomputer==empcheck)
+            System.out.println("Computer will play the game");
+        else
+            System.out.println("Computer will take a turn");
+
     }
 }
