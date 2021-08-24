@@ -107,4 +107,15 @@ public class TicTacToeGame{
             System.out.println("Check is false");
         }
     }
+    public static void checkcornerindex(char board[]) {
+        if (board.length == 0) {
+            System.out.println("Board is empty");
+        } else {
+            System.out.println("Board is not empty");
+            System.out.println("Left top corner" + board[1]);
+            System.out.println("right top corner" + board[3]);
+            System.out.println("Left top corner" + board[7]);
+            System.out.println("right top corner" + board[9]);
+        }
+    }
 }
