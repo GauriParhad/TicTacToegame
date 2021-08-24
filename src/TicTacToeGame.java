@@ -99,4 +99,12 @@ public class TicTacToeGame{
             System.out.println("Computer will take a turn");
 
     }
+    public static void checkopponent() {
+        boolean check = true;
+        if (check) {
+            System.out.println("Check is true");
+        } else {
+            System.out.println("Check is false");
+        }
+    }
 }
